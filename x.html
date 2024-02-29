@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>x animation</title>
+        <style>
+            .bellicon{
+                position: relative;
+                width:30px;
+                background-color:aqua;
+            }
+            .notinumber{
+                position: absolute;
+                background-color: red;
+                border-radius:8px;
+                padding:0px 4px 0px 4px;
+                top:2px;
+                right:1px;
+                font-size: 12px;
+            }
+            .notipanel{
+                position: absolute;
+                border-color: black;
+                border-style: dashed;
+                padding:4px 8px 4px 8px;
+                opacity: 0;
+                pointer-events:none;
+            }
+            .header{
+                font-size: larger;
+                padding:4px 4px 4px 4px;
+            }
+            .n1{
+                display:flex;
+            }
+            .p1{
+                width:50px;
+                border-radius:8px;
+            }
+            .profile{
+                justify-content:center;
+                align-items: center;
+                border-color: black;
+                border-style: dotted;
+                padding:2px 2px 2px 2px;
+            }
+            .body1{
+                display: flex;
+                flex-direction: column;
+            }
+            .pa1{
+                white-space:nowrap;
+                font-size: large;
+            }
+            .pa2{
+                white-space:nowrap;
+                font-size:small;
+            }
+            .bellicon:hover .notipanel{
+                opacity:1;
+            }
+            .bellicon:hover .notinumber{
+                opacity:0;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="bellicon">
+                <img src="notifications (1).svg" class="noti">
+            <div class="notinumber">
+                1
+            </div>
+            <div class="notipanel">
+                <div class="header">
+                    All Notifications
+                </div>
+                <div class="body">
+                    <div class="n1">
+                        <div class="profile">
+                            <img class="p1" src="cat.jpg">
+                        </div>
+                        <div class="body1">
+                            <div class="pa1">
+                                Where Are You
+                            </div>
+                            <div class="pa2">
+                                I am waiting for you
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
